@@ -126,34 +126,34 @@ const menu = [
   
   
   function koreaFoods() {
-    let allMenu=""
+    let korea=""
     menu.map(menu => {
       if (menu.category=="Korea") {
-        allMenu+=createFood(menu)
+        korea+=createFood(menu)
       }
     } )
-    menuContainerDOM.innerHTML=allMenu
+    menuContainerDOM.innerHTML=korea
   }
   
   function japanFoods() {
-    let allMenu=""
+    let japan=""
     menu.map(menu => {
       if (menu.category=="Japan") {
-        allMenu+=createFood(menu)
+        japan+=createFood(menu)
       }
     } )
-    menuContainerDOM.innerHTML=allMenu
+    menuContainerDOM.innerHTML=japan
   }
   
   
   function chinaFoods() {
-    let allMenu=""
+    let china=""
     menu.filter(menu => {
       if (menu.category=="China") {
-        allMenu+=createFood(menu)
+        china+=createFood(menu)
       }
     } )
-    menuContainerDOM.innerHTML=allMenu
+    menuContainerDOM.innerHTML=china
   }
   
   allFoods()
